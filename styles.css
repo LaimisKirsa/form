@@ -1,25 +1,32 @@
-@font-face {
-    font-family: Nunito;
-    src: url(Nunito-Regular.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
 }
-.mainLoginInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-family: Nunito, sans-serif ;
-    opacity: 1; /* Firefox */
-  }
-  
+
+.body-divider {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
 
 h1, h2, h3, p {
     color: white;
     font-family: Nunito, sans-serif ;
 }
 
+h1 {
+    font-weight: 700px;
+}
+
 body {
-    background-image: url(clothes-bg.png);
+    background-image: url(resources/images/background/clothes-bg.png);
     width: 100%;
-    height: auto;
+    height: 100vh;
     margin: 0;
-    display: flex;
-    align-content: center;
 }
 body::before {
     content: "";
@@ -35,13 +42,15 @@ body::before {
 .container {
     position: relative;
     z-index: 2;
-    width: 900px;
-    margin: 2em auto;
+    width: 800px;
+    /* margin: 2em auto; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 input {
-    height:  2em;
+    height:  2.5em;
+    
 }
 
 input[type="text"]{
@@ -55,11 +64,15 @@ input, textarea{
     background-color: #3d3636;
     margin: 0.5em 0;
     border: none;
-    box-sizing: border-box;
+    padding: 10px;
+    color: antiquewhite;
 }
 
 textarea {
     width: 100%;
+    font-family: Nuito, sans-serif;
+    padding: 10px;
+
 }
 
 input[type="submit"] {
@@ -72,11 +85,12 @@ input[type="submit"] {
     border: 0;
     width: 100%;
     border-radius: 5px;
+    margin-top: 0.5em;
 }
 
 .column-content {
     padding: 2em;
-    width: 300px;
+    width: 350px;
 }
 
 .column-right {
@@ -96,5 +110,25 @@ form {
 }
 .left-center {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+}
+
+.media-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.referal {
+    color: #7f7f7f;
 }
