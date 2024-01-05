@@ -123,6 +123,7 @@ img {
 }
 
 footer {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -131,4 +132,16 @@ footer {
 
 .referal {
     color: #7f7f7f;
+}
+
+.referal-link {
+    text-decoration-line: none;
+}
+
+a.referal-link:visited {
+    color: #666666;
+}
+
+a.referal-link:hover {
+    color: #939292;
 }
